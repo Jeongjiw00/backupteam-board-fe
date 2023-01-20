@@ -20,7 +20,7 @@
 <script>
   const urlSearch = new URLSearchParams(location.search);
   const id = urlSearch.get("id");
-  console.log(id);
+
   //영화 하나가져오기
   fetch(`http://localhost:3100/movies/${id}`)
     .then((response) => response.json())
